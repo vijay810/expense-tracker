@@ -1,3 +1,69 @@
 body{
   margin: 0;
-}
+  background-image: url('./img/1.jpg');
+  border:0;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+    /* background-color: rgb(24, 14, 2); */
+    /* border: 1rem ridge red; */
+    /* display:flex; */
+    
+    
+  }
+  
+  button{
+    border-radius: 5rem ;
+    padding-left: 4rem 4rem;
+    height: 3rem;
+    background-color: blue;
+    color:aliceblue;
+    font-size: 1rem;
+    text-align: center;
+    /* position: auto; */
+    
+  }
+  form{
+    /* background-color: rgb(236, 140, 14); */
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    margin: auto;
+    padding: 2rem;
+    border: ridge;
+    border-radius: 2rem;
+  }
+  
+  label{
+    padding-right: 3rem;
+    padding-left: 1rem;
+    font-size: 2rem;
+    color: azure;
+  }
+  input{
+    margin: auto;
+    font-size: 1.3rem;
+    padding-right: 1rem;
+    /* padding-left:10rem; */
+    padding: 1rem 1rem 0.1%;
+    width: 20rem;
+    text-align:center;
+    display: flex;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  h1{
+    text-align: center;
+    color: tomato;
+    font-size: 3rem;
+  }
+  #one{
+    border-radius: 2rem;
+    width: 50%;
+  }
