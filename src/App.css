@@ -67,3 +67,7 @@ body{
     border-radius: 2rem;
     width: 50%;
   }
+  p li{
+    color: rgb(214, 228, 21);
+    font-size: 1.3rem;
+  }

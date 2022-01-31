@@ -1,6 +1,7 @@
+
 import {useState} from "react";
-const ExpenseForm = () =>{
-    let [expName, setExpName] = useState("N");
+const ExpenseForm = ({expenseData,setExpDataFun}) =>{
+    let [expName, setExpName] = useState("Name");
     console.log(expName);
     function expNameHandler(e){
         // console.log(e.target.value);
@@ -31,9 +32,33 @@ const ExpenseForm = () =>{
         setExpDate(e.target.value);
         console.log(`ExpDate val: ${expDate}`);
     }
+    // function formHandler(e){
+    //     e.preventDefault();
+    //     // console.log(e);
+    //     const newExpData={
+    //         expName,
+    //         expAmt,
+    //         expDate
+    //     }
+    //     console.log(newExpData);
+    //     props.setExpDataFun([newExpData])
+    // }
 
+    function formHandler(e){
+        e.preventDefault();
+        // console.log(e);
+        const newExpData={
+            expName,
+            expAmt,
+            expDate
+        }
+        console.log(newExpData);
+        // props.setExpDataFun([newExpData])
+        setExpDataFun([...expenseData, newExpData])
+    }
+    
     return(
-        <form id="one">
+        <form id="one" onSubmit={formHandler}>
             <div>
                 <label htmlFor="expName">Expense Name: </label>
                 <input type ="text" id="expName" placeholder="Enter your Expense Name" onInput={expNameHandler}></input>
@@ -51,7 +76,12 @@ const ExpenseForm = () =>{
             </div>
             <p>{expName}</p>
             <p>{expAmt}</p>
-            <p>{expDate}</p> 
+            <p>{expDate}</p>
+
+
+            {/* <p><li>Expense Name: {expName}</li></p>
+            <p><li>Expense Amount: {expAmt}</li></p>
+            <p><li>Expense Date: {expDate}</li></p>  */} 
         </form>
 
     )
