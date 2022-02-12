@@ -70,9 +70,26 @@ body{
   .form_list{
     color: aliceblue;
     font-size: 1.2rem;
+    padding-left: 2rem;
+    background-color: rgb(87, 44, 107);
+    border-radius: 1rem;
+    padding: 2px 2px 2px 2px;
+    padding-left: 2rem;
+
   }
   .list{
     color: aliceblue;
     padding-left: 20rem;
     font-size: 1.5rem;
+    border-radius: 2rem;
+    width: 50%;
+  }
+  .clear button{
+    border-radius: 5rem ;
+    padding-left: 4rem 4rem;
+    height: 3rem;
+    background-color: rgb(248, 3, 24);
+    color:aliceblue;
+    font-size: 1rem;
+    text-align: center;
   }

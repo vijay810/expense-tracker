@@ -74,9 +74,12 @@ const ExpenseForm = ({expenseData,setExpDataFun, saveDataFn}) =>{
                 <input type="date" id="expDate" onChange={expDateHandler}></input>
             </div><br></br><br></br>
             <div>
-                <center><button type="submit"> Add Expense</button></center>
-
+                <center><button type="submit"> Add Expense</button></center><br></br>
+                <div class="clear">
+                <center><button type="reset"> Reset</button></center>
+                </div>
             </div>
+            <br></br>
             <div class="form_list">
             <p>{expName}</p>
             <p>{expAmt}</p>
