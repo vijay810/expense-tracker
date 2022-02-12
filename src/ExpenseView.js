@@ -13,7 +13,8 @@ function ExpenseView(props){
                     <li>Expense Name:  {d.expName}</li>
                     <li>Expense Amount:  {d.expAmt}</li>
                     <li>Expense Date: {d.expDate}</li>
-                    {/* <li>Expense Date: {props.data[0].expDate}</li> */}
+                    {/* <li>Expense Date: {props.data[0].expDate}</li>
+                    <center><button type="reset"> Reset </button></center> */}
                 </ul>))}
             </>
         ):(<h2> No Expenses Found</h2>)}

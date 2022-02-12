@@ -1,6 +1,6 @@
 
 import {useState} from "react";
-const ExpenseForm = ({expenseData,setExpDataFun}) =>{
+const ExpenseForm = ({expenseData,setExpDataFun, saveDataFn}) =>{
     let [expName, setExpName] = useState("Name");
     console.log(expName);
     function expNameHandler(e){
@@ -54,7 +54,9 @@ const ExpenseForm = ({expenseData,setExpDataFun}) =>{
         }
         console.log(newExpData);
         // props.setExpDataFun([newExpData])
-        setExpDataFun([...expenseData, newExpData])
+        //setExpDataFun([...expenseData, newExpData])
+        saveDataFn(newExpData);
+        
     }
     
     return(
@@ -73,15 +75,14 @@ const ExpenseForm = ({expenseData,setExpDataFun}) =>{
             </div><br></br><br></br>
             <div>
                 <center><button type="submit"> Add Expense</button></center>
+
             </div>
+            <div>
             <p>{expName}</p>
             <p>{expAmt}</p>
             <p>{expDate}</p>
-
-
-            {/* <p><li>Expense Name: {expName}</li></p>
-            <p><li>Expense Amount: {expAmt}</li></p>
-            <p><li>Expense Date: {expDate}</li></p>  */} 
+           
+            </div>
         </form>
 
     )
