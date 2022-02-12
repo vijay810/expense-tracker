@@ -5,7 +5,7 @@ function ExpenseView(props){
         <div>
         {props.data.length>0 ?(
             // react fragment <> </>
-            <>
+            <div class="list">
                 {props.data.map((d,i)=>(
                 <ul key ={i}>
                     {/* //Unique Id in Html <ul id=i> using React <ul key={i}. */}
@@ -16,7 +16,7 @@ function ExpenseView(props){
                     {/* <li>Expense Date: {props.data[0].expDate}</li>
                     <center><button type="reset"> Reset </button></center> */}
                 </ul>))}
-            </>
+            </div>
         ):(<h2> No Expenses Found</h2>)}
         </div>
     )

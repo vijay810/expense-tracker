@@ -67,7 +67,12 @@ body{
     border-radius: 2rem;
     width: 50%;
   }
-  p li{
-    color: rgb(214, 228, 21);
-    font-size: 1.3rem;
+  .form_list{
+    color: aliceblue;
+    font-size: 1.2rem;
+  }
+  .list{
+    color: aliceblue;
+    padding-left: 20rem;
+    font-size: 1.5rem;
   }

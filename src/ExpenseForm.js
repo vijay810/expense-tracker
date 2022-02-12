@@ -77,11 +77,10 @@ const ExpenseForm = ({expenseData,setExpDataFun, saveDataFn}) =>{
                 <center><button type="submit"> Add Expense</button></center>
 
             </div>
-            <div>
+            <div class="form_list">
             <p>{expName}</p>
             <p>{expAmt}</p>
             <p>{expDate}</p>
-           
             </div>
         </form>
 
